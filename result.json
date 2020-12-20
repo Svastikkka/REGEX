@@ -1,0 +1,10 @@
+[
+{"url":"/closeInternshipGetAllApplicants"},
+{"url":"/allapplicants"},
+{"url":"/getapplicantscores"},
+{"url":"/acceptedapplicants"},
+{"url":"/shortlistedapplicants"},
+{"url":"/rejectedapplicants"},
+{"url":"/pendingapplicants"}
+
+]

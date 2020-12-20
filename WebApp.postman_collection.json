@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "596fc807-74c5-407f-8381-446c6f9347ff",
+		"name": "WebApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=utf-8",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"grover.puneet1995@gmail.com\",\n    \"password\": \"qwertyuiop[]\\\\\"\n}"
+				},
+				"url": {
+					"raw": "https://test-myways-anfhsya-asq.myways.in/api/login",
+					"protocol": "https",
+					"host": [
+						"test-myways-anfhsya-asq",
+						"myways",
+						"in"
+					],
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=utf-8",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"email1@mail.com\",\n    \"email\":\"email1@mail.com\",\n    \"phone\":\"9999999999\",\n    \"password\":\"email1@mail.com\",\n    \"confirmPassword\":\"email1@mail.com\",\n    \"passcode\":\"\",\n    \"userType\":\"student\",\n    \"referCode\":null,\n    \"accessToken\":null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://test-myways-anfhsya-asq.myways.in/api/register",
+					"protocol": "https",
+					"host": [
+						"test-myways-anfhsya-asq",
+						"myways",
+						"in"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/verifyotp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"type": "text",
+						"value": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Language",
+						"type": "text",
+						"value": "en-US,en;q=0.5"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json;charset=utf-8"
+					},
+					{
+						"key": "Connection",
+						"type": "text",
+						"value": "keep-alive"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"email1@mail.com\",\n    \"otp\":\"41761\",\n    \"userType\":\"student\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://test-myways-anfhsya-asq.myways.in/api/verifyotp",
+					"protocol": "https",
+					"host": [
+						"test-myways-anfhsya-asq",
+						"myways",
+						"in"
+					],
+					"path": [
+						"api",
+						"verifyotp"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
