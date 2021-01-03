@@ -9,7 +9,7 @@ const passcodeController = require("../controller/admin/pascode");
 
 apiRoutes.post("/recruiterlogin", adminController.recruiterLogin);
 
-apiRoutes.post(a"/unlock", adminUnlockController.unlockProfile);
+apiRoutes.post("/unlock", adminUnlockController.unlockProfile);
 
 apiRoutes.post("/unlock-all", adminUnlockController.unlockMultipleApplicants);
 
